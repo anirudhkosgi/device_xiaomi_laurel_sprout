@@ -494,4 +494,5 @@ on property:vendor.dcvs.prop=1
    start dcvs-sh
 
 on property:sys.boot_completed=1
-    swapon_all /vendor/etc/fstab.qcom 
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
