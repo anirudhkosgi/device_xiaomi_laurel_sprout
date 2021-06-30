@@ -171,6 +171,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1
+    vendor.display.qdcm.disable_factory_mode=1
+    vendor.display.qdcm.mode_combine=1
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
