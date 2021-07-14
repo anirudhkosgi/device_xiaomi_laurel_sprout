@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
-    Snap
+    GrapheneOS-Camera
 
 # Charger
 PRODUCT_PACKAGES += \
