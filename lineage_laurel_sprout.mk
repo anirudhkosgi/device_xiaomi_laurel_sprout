@@ -40,6 +40,8 @@ SKIP_ABI_CHECKS := true
 EXTRA_FOD_ANIMATIONS := true
 
 # Props
+MAINTAINER := ItsTarzan
+BUILD := UNOFFICIAL
 WITH_GAPPS := false
 WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
