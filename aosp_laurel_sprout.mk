@@ -24,6 +24,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/laurel_sprout.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
