@@ -394,7 +394,8 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.safailnet.rc
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
