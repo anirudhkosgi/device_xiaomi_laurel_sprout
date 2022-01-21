@@ -278,9 +278,6 @@
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
          and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false" >
-        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
-    </string-array>
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
@@ -932,23 +929,13 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M-89.6,0 C-65.1346648,0 -51.1690203,0.18 -36.9506892,31.2970381 C-29.2758076,44.1422902 -15.4572493,53 0.0018857203,53 C15.4610208,53 29.2758076,44.1422902 36.9544607,31.2970381 C51.1690203,0.18 65.1384363,0 89.6,0 L-89.6,0 Z
-    </string>
-
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
-    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-
     <!-- Height of the status bar -->
     <dimen name="rounded_corner_radius">8dp</dimen>
-    <dimen name="rounded_corner_radius_bottom">128.0px</dimen>
     <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
-    <dimen name="rounded_corner_radius_top">144.0px</dimen>
     <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
-    <dimen name="status_bar_height_landscape">56px</dimen>
-    <dimen name="status_bar_height_portrait">70px</dimen>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
