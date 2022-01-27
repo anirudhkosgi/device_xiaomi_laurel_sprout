@@ -102,4 +102,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        <item>30</item>
     </integer-array>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
 </resources>
