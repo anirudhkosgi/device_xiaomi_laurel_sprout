@@ -522,3 +522,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
+
+# Udfps
+PRODUCT_PACKAGES += \
+    UdfpsResources
