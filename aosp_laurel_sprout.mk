@@ -37,6 +37,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # ABI Checks
 SKIP_ABI_CHECKS := true
 
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220105.007/8030436:user/release-keys"
+
 EXTRA_UDFPS_ICONS := true
 
 EXTRA_UDFPS_ANIMATIONS := true
