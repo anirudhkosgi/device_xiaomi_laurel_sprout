@@ -227,9 +227,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Healthd
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl:64 \
-    android.hardware.health@2.1-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.health@2.1-impl:64 \
+#    android.hardware.health@2.1-service
 
 ifneq ($(AB_OTA_UPDATER),true)
 PRODUCT_PACKAGES += \
