@@ -37,7 +37,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # ABI Checks
 SKIP_ABI_CHECKS := true
 
-BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220105.007/8030436:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.20.0.RFQMIXM:user/release-keys"
 
 EXTRA_UDFPS_ICONS := true
 
