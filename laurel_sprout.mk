@@ -527,11 +527,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vend
 PRODUCT_PACKAGES += \
     UdfpsResources
 
-# Call recording
-PRODUCT_PACKAGES += \
-    com.google.android.apps.dialer.call_recording_audio.features.xml
-
 #Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/lahaina-yupikqrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/lahaina-yupikqrd-snd-card_Button_Jack.kl
-
