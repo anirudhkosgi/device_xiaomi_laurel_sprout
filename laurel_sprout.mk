@@ -24,6 +24,9 @@
 # Inherit props
 $(call inherit-product, $(LOCAL_PATH)/props.mk)
 
+# Board
+TARGET_BOARD_PLATFORM := trinket
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
