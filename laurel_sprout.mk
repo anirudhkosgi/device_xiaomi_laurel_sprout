@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system
 
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.frameworks.displayservice@1.0 \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
@@ -189,7 +190,8 @@ PRODUCT_PACKAGES += \
 
 # FOD
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout
+    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
+    android.hardware.biometrics.fingerprint@2.3.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -213,6 +215,7 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
+    android.hardware.gnss@2.0.vendor \
     libbatching \
     libgeofencing \
     libgnss \
@@ -240,8 +243,8 @@ endif
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libhidltransport.vendor
@@ -412,6 +415,10 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.0 \
     rild \
     librmnetctl \
@@ -535,3 +542,23 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/display \
     hardware/qcom/media \
     vendor/qcom/opensource/audio-hal/primary-hal
+
+# QTI common
+-include vendor/qcom/common/vendor/perf/perf-vendor.mk
+-include vendor/qcom/common/system/perf/perf-vendor.mk
+-include vendor/qcom/common/system/bt/bt-vendor.mk
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.0.vendor
+
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.1.vendor
+
+# Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.system.net.netd@1.1.vendor
+
